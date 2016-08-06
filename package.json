@@ -1,6 +1,6 @@
 {
   "name": "word-stats",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Analyze a list of words fetching pronunciation, stress, rhymes, and other useful data points.",
   "main": "index.js",
   "scripts": {
