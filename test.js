@@ -30,3 +30,16 @@ test('basic word stats', function (t) {
   });
   t.end();
 });
+
+test('lists of words', function (t) {
+  var stats = require('./index');
+  var datas = stats(Object.keys(wordsToTest));
+
+  t.equal(datas.length, Object.keys(wordsToTest).length, 'returns correct number of datas');
+
+  datas.forEach(function (data) {
+    t.deepEqual(data, wordsToTest[data.word], 'returns proper data');
+  });
+
+  t.end();
+});

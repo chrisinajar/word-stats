@@ -6,7 +6,10 @@ var cmudict = new CMUDict();
 module.exports = wordStats;
 
 function wordStats (word) {
-  return calculate(word);
+  if (typeof word === 'string') {
+    return calculate(word);
+  }
+  return word.map(calculate);
 
   function calculate (word) {
     var pronounce = cmudict.get(word);
