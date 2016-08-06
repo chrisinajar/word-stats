@@ -1,0 +1,28 @@
+{
+  "name": "word-stats",
+  "version": "0.0.0",
+  "description": "Analyze a list of words fetching pronunciation, stress, rhymes, and other useful data points.",
+  "main": "index.js",
+  "scripts": {
+    "test": "semistandard && tape ./test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisinajar/word-stats.git"
+  },
+  "author": "Chris Vickery <chrisinajar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisinajar/word-stats/issues"
+  },
+  "homepage": "https://github.com/chrisinajar/word-stats#readme",
+  "dependencies": {
+    "cmudict": "^1.0.2",
+    "pos": "^0.3.0"
+  },
+  "devDependencies": {
+    "semistandard": "^8.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0"
+  }
+}
