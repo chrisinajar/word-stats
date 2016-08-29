@@ -1,8 +1,8 @@
 {
-  "name": "word-stats",
-  "version": "0.3.0",
+  "name": "word-stats-webapp",
+  "version": "0.0.0",
   "description": "Analyze a list of words fetching pronunciation, stress, rhymes, and other useful data points.",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "semistandard && tape ./test.js | tap-spec"
   },
@@ -18,9 +18,17 @@
   "homepage": "https://github.com/chrisinajar/word-stats#readme",
   "dependencies": {
     "cmudict": "^1.0.2",
-    "pos": "^0.3.0"
+    "json-stylesheets": "^0.2.0",
+    "nhg": "^0.6.0",
+    "pos": "^0.3.0",
+    "word-stats": "^0.3.0"
   },
   "devDependencies": {
+    "budo": "^9.0.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-semistandard": "^0.2.2",
+    "gulp-tape": "0.0.9",
     "semistandard": "^8.0.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0"

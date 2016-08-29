@@ -1,0 +1,2 @@
+
+setTimeout(require('./init'));
